@@ -1,4 +1,5 @@
 Book Sales Frontend - Admin Dashboard
+
 Proyek ini merupakan implementasi Tugas 1 React JS Lanjutan yang berfokus pada pengembangan fitur CRUD (Create & Read) untuk entitas Genre dan Author pada halaman Admin aplikasi Book Sales.
 
 
