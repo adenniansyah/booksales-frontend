@@ -1,26 +1,25 @@
-Book Sales Frontend - Admin Dashboard
+# 📚 Book Sales Admin Dashboard (Frontend)
 
-Proyek ini merupakan implementasi Tugas 1 React JS Lanjutan yang berfokus pada pengembangan fitur CRUD (Create & Read) untuk entitas Genre dan Author pada halaman Admin aplikasi Book Sales.
+Proyek ini merupakan implementasi frontend untuk sistem manajemen penjualan buku. Dibangun menggunakan **React JS (Vite)** dan terhubung dengan backend **Laravel API**. Fokus utama pengembangan adalah pada fitur manajemen data yang interaktif dan desain antarmuka yang bersih.
 
+## ✨ Fitur Utama
+- **Manajemen Genre & Author:** Sistem CRUD lengkap (Tambah, Baca, Edit, Hapus).
+- **Modern UI/UX:** Desain card layout yang rapi, navigasi tab yang intuitif, dan feedback visual yang jelas.
+- **Real-time Interaction:** Pembaruan data instan tanpa reload halaman (Single Page Application).
+- **Responsive Design:** Tampilan yang nyaman diakses melalui berbagai ukuran layar.
 
-🚀 Fitur Utama
+## 🛠️ Teknologi yang Digunakan
+- **Framework:** React JS + Vite
+- **Styling:** CSS Modern (Inline Styles & Flexbox)
+- **HTTP Client:** Axios (untuk komunikasi dengan Laravel API)
+- **State Management:** React Hooks (`useState`, `useEffect`)
 
-Read Data: Mengambil dan menampilkan daftar Genre serta Author secara otomatis saat halaman dimuat menggunakan teknik asynchronous.
-Create Data: Form input dinamis untuk menambahkan data Genre dan Author baru ke server tanpa me-reload halaman (Single Page Application).
-Real-time Update: Tampilan daftar data diperbarui secara instan setelah data berhasil ditambahkan.
+## 🚀 Cara Menjalankan Proyek
+1. Clone repository ini: `git clone [url-repo-anda]`
+2. Masuk ke folder proyek: `cd booksales-frontend`
+3. Install dependensi: `npm install`
+4. Jalankan server development: `npm run dev`
+5. Pastikan backend Laravel sudah berjalan di port 8000.
 
-
-🛠️ Teknologi & Konsep
-
-Sesuai dengan modul pembelajaran, proyek ini menerapkan best practice berikut:
-React Hooks: Menggunakan useState untuk manajemen state lokal dan useEffect untuk side effects (fetching data awal).
-Axios Library: Digunakan untuk melakukan HTTP Request (GET dan POST) ke API Backend Laravel dengan penanganan Promise yang lebih baik dibanding Fetch API standar.
-Async/Await: Implementasi kode asynchronous yang bersih dan mudah dibaca untuk menangani operasi jaringan.
-Error Handling: Penggunaan blok try-catch untuk memastikan aplikasi tetap stabil jika terjadi kegagalan koneksi atau error server.
-CORS Configuration: Konfigurasi Cross-Origin Resource Sharing di sisi backend (Laravel 11) untuk mengizinkan komunikasi aman antara frontend (Vite) dan backend.
-
-
-📂 Struktur Proyek Penting
-
-src/App.jsx: Komponen utama yang berisi logika UI, state management, dan handler fungsi CRUD.
-src/services/api.js: Konfigurasi instance Axios terpusat untuk baseURL API.
+## 📸 Dokumentasi
+Proyek ini telah berhasil mengimplementasikan fitur Update dan Delete dengan validasi input serta konfirmasi penghapusan data untuk keamanan pengguna.
