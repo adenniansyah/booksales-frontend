@@ -30,3 +30,27 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate:fresh --seed
 php artisan serve
+
+2. Frontend
+cd booksales-frontend
+npm install
+npm run dev
+
+👤 Akun Testing Default
+Setelah menjalankan seeder, gunakan akun berikut untuk testing RBAC:
+Role
+Email
+Password
+Admin
+admin@booksales.com
+123456
+User
+user@booksales.com
+123456
+
+📂 Struktur Folder Frontend
+src/
+├── components/     # Komponen reusable (ProtectedRoute)
+├── context/        # Global state management (AuthContext)
+├── pages/          # Halaman utama (Home, Login, Dashboard, dll)
+└── services/       # Konfigurasi API & Axios Interceptors
